@@ -41,8 +41,8 @@ const citiesId2 = [
 const query1 = citiesId1.join(",");
 const query2 = citiesId2.join(",");
 
-const url1 = `https://api.openweathermap.org/data/2.5/group?id=${query1}&appId=93850d750ff715016139f02eebed56e2`
-const url2 = `https://api.openweathermap.org/data/2.5/group?id=${query2}&appid=93850d750ff715016139f02eebed56e2`
+const url1 = `https://api.openweathermap.org/data/2.5/group?id=${query1}&appId=${process.env.API_KEY}`
+const url2 = `https://api.openweathermap.org/data/2.5/group?id=${query2}&appid=${process.env.API_KEY}`
 
 const getCityData = async () => {
     
